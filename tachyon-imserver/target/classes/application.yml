@@ -1,0 +1,28 @@
+im:
+  server:
+    host: localhost
+    port: 9091
+    maxFramePayloadLength: 1048576
+    maxHttpContentLength: 1048576
+    bossCount: 1
+    workCount: 100
+    allowCustomRequests: true
+    upgradeTimeout: 1000000
+    pingTimeout: 6000000
+    pingInterval: 25000
+
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 3000
+    database: 0
+    lettuce:
+      pool:
+        min-idle: 1
+        max-idle: 8
+        max-active: 10
+        max-wait: 1000
+      shutdown-timeout: 200
+server:
+  port: 8090

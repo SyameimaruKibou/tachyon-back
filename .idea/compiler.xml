@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tachyon-imserver" />
+        <module name="tachyon-basic" />
+        <module name="tachyon-webserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tachyon-logserver" target="1.8" />
+      <module name="tachyon-route" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tachyon-back" options="" />
+      <module name="tachyon-basic" options="-parameters" />
+      <module name="tachyon-imserver" options="-parameters" />
+      <module name="tachyon-logserver" options="-parameters" />
+      <module name="tachyon-route" options="-parameters" />
+      <module name="tachyon-webserver" options="-parameters" />
+    </option>
+  </component>
+</project>
